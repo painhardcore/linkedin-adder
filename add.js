@@ -1,12 +1,12 @@
 setInterval(function () {$('html').scrollTop(20);$('html').scrollTop(100000);}, 1000);
 setInterval(function () {
-    var count = $('.mn-discovery-entity-card').length;
+    var count = $('.discover-person-card').length;
     console.log("Count "+count);
     if (count > 50) {
-        $('.mn-discovery-entity-card').each(function (index, value) {
+        $('.discover-person-card').each(function (index, value) {
             count--;
             if (count > 20) {
-                $(value).find(".js-mn-discovery-person-card__action-btn")[0].click();
+                $(value).find(".js-discover-person-card__action-btn")[0].click();
             }
         });
     }
